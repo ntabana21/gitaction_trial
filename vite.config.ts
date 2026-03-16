@@ -1,7 +1,8 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
 
-// @ts-ignore
+import react from '@vitejs/plugin-react'
+import {defineConfig} from "eslint/config";
+
+// @ts-expect-errore no error we just ignore it
 export default defineConfig({
   plugins: [react()],
   test: {

@@ -1,4 +1,4 @@
-import { defineConfig } from 'vite'
+import { defineConfig } from 'vitest/config'  // ✅ Changed from 'vite'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
@@ -8,4 +8,4 @@ export default defineConfig({
     environment: 'jsdom',
     setupFiles: './src/test/setup.ts',
   }
-})  // ✅ No extra comma or parenthesis here
+})

@@ -35,7 +35,7 @@ jobs:
         run: npx tsc --noEmit  # Run TypeScript compiler to check types
 
       - name: Run tests
-        run: npm test:ci # Run tests with coverage
+        run: npm run test:ci # Run tests with coverage
 
       - name: Build project
         run: npm run build  # Vite will build to 'dist' folder by default

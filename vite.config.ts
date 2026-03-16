@@ -1,6 +1,12 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+
+// @ts-ignore
 export default defineConfig({
   plugins: [react()],
-  base: '/gitaction_trial/',
+  test: {
+    globals: true,
+    environment: 'jsdom',
+    setupFiles: './src/test/setup.ts',
+  },
 })
